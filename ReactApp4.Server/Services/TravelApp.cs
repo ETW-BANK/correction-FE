@@ -149,15 +149,15 @@ namespace Travel_Ginie_App.Server.Services
                     // Select only the required properties
                     var hotelSummaries = result.data.data.Select(hotel => new HotelDtos.Root
                     {
-                       data=new HotelDtos.Data
-                       {
-                           title=hotel.title,
-                           bubbleRating=hotel.bubbleRating,
-                           priceForDisplay=hotel.priceForDisplay,
-                           primaryInfo=hotel.primaryInfo,
-                           secondaryInfo=hotel.secondaryInfo
+                        data = new HotelDtos.Data
+                        {
+                            title = hotel.title,
+                            bubbleRating = hotel.bubbleRating,
+                            priceForDisplay = hotel.priceForDisplay,
+                            primaryInfo = hotel.primaryInfo,
+                            secondaryInfo = hotel.secondaryInfo
 
-                       }
+                        }
                     }).ToList();
 
                     return hotelSummaries;
@@ -244,29 +244,30 @@ namespace Travel_Ginie_App.Server.Services
                     var jsonrespopns = await response.Content.ReadAsStringAsync();
 
                     var result = JsonConvert.DeserializeObject<TripPlanDto.TripPlan>(jsonrespopns);
-                    
 
-                   // var expectedreult = result.plan.Select(expeceted => new TripPlanDto.TripPlan
+
+                    // var expectedreult = result.plan.Select(expeceted => new TripPlanDto.TripPlan
                     {
-                       // plan=new List<Plan>
-                       // { 
-                            
-                         //   new Plan
-                          //  {
-                          //      day=expeceted.day,
-                          //      activities=expeceted.activities,    
-                           // }
-                           
-                        
-                      //  }
+                        // plan=new List<Plan>
+                        // { 
 
-                   // }).ToList();
-
-                    return result;
+                        //   new Plan
+                        //  {
+                        //      day=expeceted.day,
+                        //      activities=expeceted.activities,    
+                        // }
 
 
+                        //  }
+
+                        // }).ToList();
+
+                        return result;
 
 
+
+
+                    }
                 }
             }
             catch (HttpRequestException ex)
@@ -275,7 +276,7 @@ namespace Travel_Ginie_App.Server.Services
             }
         }
 
-
+    
 
         public async Task<int> GetGeoId(string city)
         {
