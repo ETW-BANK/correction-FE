@@ -1,0 +1,6 @@
+@Travel_Ginie_App.Server_HostAddress = http://localhost:5028
+
+GET {{Travel_Ginie_App.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

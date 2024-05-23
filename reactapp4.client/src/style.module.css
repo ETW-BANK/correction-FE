@@ -1,0 +1,393 @@
+.card-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.mainContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 12px;
+    margin-top: 50px;
+}
+
+.imgBox,
+.textBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 229px;
+    border-radius: 8px;
+}
+
+.imgBox {
+    background-color: #F3E6E6;
+}
+
+.textBox {
+    padding: 0 22.5px 0 22.5px;
+    font-size: 32px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 413px;
+    border-radius: 8px;
+    flex-direction: column;
+    background-color: #B6D9F0;
+}
+
+.formTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.formText {
+    text-align: center;
+    font-size: 1rem;
+    width: 90vw;
+}
+
+
+.footer {
+    background-color: darkblue;
+    padding: 20px;
+
+}
+
+.progressContainer {
+    width: 80%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.progressText {
+    font-size: 0.6rem;
+    color: #333;
+    margin-bottom: 3px;
+    text-align: right;
+}
+
+.progress {
+    width: 100%;
+    height: 6px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.line1,
+.line2,
+.line3,
+.line4,
+.line5,
+.line6,
+.line7 {
+    height: 100%;
+    background-color: #00FF00;
+    border-radius: 5px;
+}
+
+.line1 {
+    width: 14.29%;
+}
+
+/* Its lazy i know */
+.line2 {
+    width: 28.57%;
+}
+
+.line3 {
+    width: 42.86%;
+}
+
+.line4 {
+    width: 57.14%;
+}
+
+.line5 {
+    width: 71.43%;
+}
+
+.line6 {
+    width: 85.71%;
+}
+
+.line7 {
+    width: 100%;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.select {
+    padding: 15px;
+    border: none;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.input,
+input[type="date"] {
+    padding: 15px;
+    border: none;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 90%;
+}
+
+.landingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    gap: 15px;
+    width: 80%;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 10px;
+    /* background-color: #f5f5f5; */
+    border-radius: 15px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    margin: 0 auto;
+    width: 90%;
+}
+
+.desButton {
+    background-color: #1E2341;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    width: 97px;
+    height: 45px;
+    border: solid 1px black;
+    color: #ffffff;
+}
+
+.landButton {
+    background-color: #d2cccc;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    /* font-size: 0.7rem; */
+    border: solid 1px black;
+}
+
+.formButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #000000;
+    border: solid white 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+    margin-top: 10px;
+}
+
+.AccAlign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.AccForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin-top: -10%;
+}
+
+.accountBtn {
+    width: 70%;
+    padding: 8px;
+    border-radius: 10px;
+    border: transparent;
+    color: #000000;
+    background-color: #d9d9d9;
+    margin-top: 10px;
+}
+
+.headerAlign {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(226, 205, 202);
+    padding-bottom: 5px;
+}
+
+.selected {
+    border: solid black 2px;
+    background-color: #F29F8D;
+}
+
+.boxTest {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 80vh;
+    flex-direction: column-reverse;
+}
+
+.stepContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Dåligt sätt att fixa layout men det var enkelt */
+.article {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.art {
+    width: 90vw;
+}
+
+.overlay {
+    position: fixed;
+    top: 72px;
+    right: 0;
+    width: auto;
+    height: auto;
+
+    z-index: 1000;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.overlayContent {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.accountContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.accountInputs {
+    padding: 10px;
+    margin-top: 10px;
+    width: 70%;
+    border-radius: 10px;
+    border: transparent;
+    background-color: #d9d9d9;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stepRev {
+    /*Step Reverse */
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.stepTitle {
+    text-align: center;
+}
+
+/* Test för bilder över/brevid form */
+/* ignorera */
+@media screen and (min-width: 800px) {
+    .boxTest {
+        flex-direction: row;
+        /* width: 40vw; */
+    }
+
+    .step,
+    .stepRev {
+        flex-direction: row;
+    }
+}
+
+.btnContainer {
+    width: 40%;
+}
+
+.step,
+.stepRev {
+    flex-direction: row;
+}
+
+/* style.module.css */
+
+.accordionItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(249, 249, 249);
+
+    border-top: solid 1px rgb(184, 184, 184);
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.accordionContent {
+    border-top: solid 1px rgb(184, 184, 184);
+    padding: 20px;
+}
