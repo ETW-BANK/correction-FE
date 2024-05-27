@@ -72,7 +72,7 @@ namespace Travel_Ginie_App.Server.Services
                 {
                     string apiUrl = $"https://world-citiies-api.p.rapidapi.com/cities/country/{country}";
 
-                    client.DefaultRequestHeaders.Add("X-RapidAPI-Key", "591bd945f4mshbfb84bf3770c328p1c3121jsn63dbf14028d2");
+                    client.DefaultRequestHeaders.Add("X-RapidAPI-Key", "d7e9322450msh50722105539f988p17a776jsn08e2a7b82309");
                     client.DefaultRequestHeaders.Add("X-RapidAPI-Host", "world-citiies-api.p.rapidapi.com");
 
                     var response = await client.GetAsync(apiUrl);
@@ -102,7 +102,7 @@ namespace Travel_Ginie_App.Server.Services
                 {
                     string apiUrl = $"https://city-list.p.rapidapi.com/api/getCountryList";
 
-                    client.DefaultRequestHeaders.Add("X-RapidAPI-Key", "1e672dc169mshdcfa766897c5a4ep19f054jsne3cb79de3eb5");
+                    client.DefaultRequestHeaders.Add("X-RapidAPI-Key", "d7e9322450msh50722105539f988p17a776jsn08e2a7b82309");
                     client.DefaultRequestHeaders.Add("X-RapidAPI-Host", "city-list.p.rapidapi.com");
 
                     var response = await client.GetAsync(apiUrl);
